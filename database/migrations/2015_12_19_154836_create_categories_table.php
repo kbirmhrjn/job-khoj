@@ -14,6 +14,10 @@ class CreateCategoriesTable extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title')->index();
+            $table->string('alias'); // alias is for displaying the title of the category
+            $table->string('slug')->unique();
+            $table->integer('parent_id')->index()->nullable();
             $table->timestamps();
         });
     }
