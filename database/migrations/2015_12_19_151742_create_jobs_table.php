@@ -19,6 +19,7 @@ class CreateJobsTable extends Migration
             $table->text('how_to_apply');
             $table->string('level'); // entry|intermediate|expert
 
+            $table->string('company');
             $table->string('job_type')->nullable(); // FullTime|ContractTime|PartTime|Freelancer|Intern
             $table->string('location')->nullable(); // remote Or
             $table->string('country')->nullable();
