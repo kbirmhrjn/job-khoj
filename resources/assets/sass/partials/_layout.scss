@@ -1,5 +1,40 @@
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+header{
+        text-align: left;
+    padding: 2em 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #f4f2f0;
+    background: #34495E;
+    color: #fff;
+    text-align: center;
+    padding: 1em 1em;
+    nav{
+        display: block;
+        text-align: right;
+        padding-top: 15px;
+        float: left;
+        margin-right: 2.35765%;
+        width: 82.94039%;
+        :last-child {
+            margin-right: 0;
+        }
+    }
+}
+body{
+    font: 1em "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.618em;
+}
+.no_radius
+{
+    border-radius: 0px;
+}
+.no_margin
+{
+    margin-bottom:0px;
+}
+
+#logo{
+    height:50px;
+    width:130px;
 }
 
 footer {
