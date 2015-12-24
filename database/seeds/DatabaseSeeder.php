@@ -4,6 +4,12 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
+    protected $tables = [
+                            'categories',
+                            'users',
+                            'jobs',
+                            'category_job'
+                        ];
     /**
      * Run the database seeds.
      *
@@ -11,8 +17,20 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this->truncateTables();
+        $this->call(CategorySeeder::class);
         $this->call(UserSeeder::class);
         $this->call(JobSeeder::class);
-        $this->call(CategorySeeder::class);
+    }
+
+    public function truncateTables()
+    {
+        DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+
+        foreach ($this->tables as $table) {
+            DB::table($table)->truncate();
+        }
+
+        DB::statement('SET FOREIGN_KEY_CHECKS = 1');
     }
 }
