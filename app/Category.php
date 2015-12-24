@@ -8,4 +8,9 @@ class Category extends Model
 {
     protected $fillable = ['title','alias','slug'];
 
+
+    public function job()
+    {
+        return $this->belongsToMany(Job::class);
+    }
 }
