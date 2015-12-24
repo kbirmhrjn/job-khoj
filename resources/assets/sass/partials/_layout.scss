@@ -20,7 +20,7 @@ header{
     }
 }
 body{
-    font: 1em "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 1.5em "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 1.618em;
 }
 .no_radius
@@ -31,7 +31,9 @@ body{
 {
     margin-bottom:0px;
 }
-
+.job_listing{
+    margin-bottom: 0.5em;
+}
 #logo{
     height:50px;
     width:130px;
