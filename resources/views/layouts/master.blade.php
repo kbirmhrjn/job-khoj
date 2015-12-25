@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <title>Job Khoj | A Comprehensive Job Portal</title>
     <!-- Core CSS -->
-    <link href="css/app.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,6 +34,9 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <nav class="collapse navbar-collapse" id="menu-navigation">
                   <ul class="nav navbar-nav">
+                      <li>
+                          <a href="/">Home</a>
+                      </li>
                       <li>
                           <a href="#">About</a>
                       </li>
@@ -67,6 +70,6 @@
     </div>
     <!-- /.container -->
     <!-- ApplicationJs -->
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
