@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "25ce9052c89a262cfda1d410940a552efb9ae85c"
+                "reference": "974fd16e328ca851a081449100d9509af59cf0ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/25ce9052c89a262cfda1d410940a552efb9ae85c",
-                "reference": "25ce9052c89a262cfda1d410940a552efb9ae85c",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/974fd16e328ca851a081449100d9509af59cf0ff",
+                "reference": "974fd16e328ca851a081449100d9509af59cf0ff",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2015-12-21 19:07:38"
+            "time": "2015-12-22 06:22:38"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -533,16 +533,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.0",
+            "version": "v5.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "7f62d81acb2001faafb21a32544464ebfc92476c"
+                "reference": "1d165631b90d104c517d54455a5e867584645473"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/7f62d81acb2001faafb21a32544464ebfc92476c",
-                "reference": "7f62d81acb2001faafb21a32544464ebfc92476c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/1d165631b90d104c517d54455a5e867584645473",
+                "reference": "1d165631b90d104c517d54455a5e867584645473",
                 "shasum": ""
             },
             "require": {
@@ -658,7 +658,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-12-21 17:25:36"
+            "time": "2015-12-24 15:39:57"
         },
         {
             "name": "league/flysystem",
