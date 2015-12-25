@@ -26,7 +26,7 @@ $factory->define(App\Job::class, function (Faker\Generator $faker) {
         return [
             'title' => $title,
             'slug' => str_slug($title),
-            'description' => $faker->paragraph,
+            'description' => $faker->paragraphs(5),
             'how_to_apply' => $faker->paragraph,
             'level' => $level[rand(0,2)],
             'job_type' => $jobType[rand(0,4)],
