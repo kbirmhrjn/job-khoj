@@ -6,6 +6,12 @@ php:
   - 7.0
   - hhvm
 
+services:
+  - mysql
+
+before_install:
+  - mysql -e "create database IF NOT EXISTS job_khoj;" -uroot
+
 env:
   global:
     - setup=basic

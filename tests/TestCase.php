@@ -1,7 +1,11 @@
 <?php
 
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+
 class TestCase extends Illuminate\Foundation\Testing\TestCase
 {
+    use DatabaseMigrations;
 
     public function setUp()
     {
