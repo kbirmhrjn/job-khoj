@@ -14,6 +14,7 @@
         <ul class="list-group">
             @foreach($jobs as $job)
                 <li class="list-group-item job_listing">
+                    <a href="/job/{{$job->slug}}/{{$job->id}}">
                     <div class="content clearfix">
                         <span class="list-group-item-heading clearfix">
                             <strong class="pull-left">{!! ucfirst($job->title)!!}</strong>
@@ -24,6 +25,7 @@
                             <span class="pull-right">{{ $job->getPlace() }}</span>
                         </p>
                     </div>
+                    </a>
                 </li>
             @endforeach
         </ul>
