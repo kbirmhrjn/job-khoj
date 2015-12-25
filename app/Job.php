@@ -19,6 +19,11 @@ class Job extends Model
      */
     public function getPlace()
     {
-        return $this->city == 'anywhere' ? "Remote / Anywhere" : $this->city .', '. $this->country;
+        return $this->isRemote() ? "Remote / Anywhere" : $this->city .', '. $this->country;
+    }
+
+    public function isRemote()
+    {
+        return $this->city == 'anywhere';
     }
 }

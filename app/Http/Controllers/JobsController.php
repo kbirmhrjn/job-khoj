@@ -12,7 +12,7 @@ class JobsController extends Controller
 {
     public function show($slug , $id )
     {
-        return $job = Job::where('id', $id)->where('title',$slug)->firstOrFail();
+        $job = Job::where('id', $id)->where('title',$slug)->firstOrFail();
         return view('jobs.show', compact('job'));
     }
 }
