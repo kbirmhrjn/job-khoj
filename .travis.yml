@@ -6,12 +6,6 @@ php:
   - 7.0
   - hhvm
 
-services:
-  - mysql
-
-before_install:
-  - mysql -e "create database IF NOT EXISTS job_khoj;" -uroot
-
 env:
   global:
     - setup=basic
@@ -19,6 +13,6 @@ env:
 sudo: false
 
 install:
-  - if [[ $setup = 'basic' ]]; then travis_retry composer install --no-interaction; fi
+  - if [[ $setup = 'basic' ]]; then travis_retry composer install --no-interaction --prefer-source; fi
 
 script: vendor/bin/phpunit
